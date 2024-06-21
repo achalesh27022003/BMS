@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/main.min.css">
+    <link rel="icon" type="image/png" href="Frame 10.png">
+    <title>MediaMania</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+  <!-- NavBar Section -->
+<nav class="navbar fi navbar-expand-md navbar-light bg-light">
+  <div class="container-xxl">
+    <a href = "/index.html" class = "navbar-brand">
+      <img src="/Group 6.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      <span class="fw-bold text-secondary"> MediaMania</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav" data-bs-theme="dark">
+      <ul class="navbar-nav">
+        <li class = "nav-item">
+          <a href="#cardGallery" class="nav-link">MediaMania</a>
+        </li>
+        <li class = "nav-item">
+          <a href="#shareyours" class="nav-link">Share Yours</a>
+        </li>
+    </div>
+  </div>
+</nav>   
+    <!-- <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/DOM/1.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            MediaMania
+          </a>
+          <form class="d-flex flex-row" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search Movies/Books" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Play</button>
+          </form>
+        </div>
+      </nav> --> 
+   <!-- Top-Mid section-->
+   <a href = "/index.html"> <img src="/Frame 1.svg" class="img-fluid mt-4 mx-auto d-block" alt="Responsive image"></a>
+    <div class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Type 'Movies/Books/TV Shows'" aria-label="Search" id = "searchInput">
+            <button class="btn btn-outline-dark" type="submit" id = "searchButton">Play</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards Section -->
+ <h5 class = "text-alt-genre mt-5 text-center" id="notFound" style = "display: none;">Wow! Looks like you've a suggestion to add. Share your favourites here.</h5>   
+<div class="row row-cols-3 g-3 mx-5 my-4 " id="cardGallery">
+  <div class = "col-sm-12 col-md-4 col-lg-4">
+    <div class="card" data-title="3 Idiots">
+      <a href = "/3idiots.html"><img src="3_idiots_poster 1.svg" class="card-img-top w-100 h-100" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title text-center placeholder-glow">3 Idiots</h5>
+          <p class="card-text container-fluid">A iconic narrated story describing pulls & pressures in the life of 3 friends studying at Indian Engineering College.</p>
+          <div class="d-flex justify-content-between">
+          <a href="/3idiots.html" class="btn btn-outline-dark">Watch Now</a>
+          <div class="cardicons">
+            <a href="/3idiots.html#storyline" class="bi bi-eye-fill" ></i></a>  
+            <a href="3idiots.html#cast"><i class="bi bi-people-fill"></i></a>
+          </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <!-- <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="#">
+      <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+      Icon link
+    </a> --> <!--Check this when you want to animate icon-->
+<div class = "col-sm-12 col-md-4 col-lg-4">
+    <div class="card" data-title="Munna Bhai MBBS">
+      <a href = "/munnabhai.html"><img src="/munnabhaimbbs.svg" class="card-img-top w-100 h-100" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title text-center">Munna Bhai MBBS</h5>
+          <p class="card-text container-fluid">A gangster enrolls in medical school to fulfill his father's dream and discovers the value of compassion.</p>
+          <div class="d-flex justify-content-between">
+          <a href="/munnabhai.html" class="btn btn-outline-dark">Watch Now</a>
+          <div class="cardicons">
+            <a href="/munnabhai.html#storyline"><i class="bi bi-eye-fill" ></i></a>  
+            <a href="munnabhai.html#cast"><i class="bi bi-people-fill"></i></a>
+          </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div class = "col-sm-12 col-md-4 col-lg-4">
+      <div class="card" data-title = "Ford v/s Ferrari">
+        <a href = "/fordferrari.html"><img src="fordvsferrari.svg" class="card-img-top w-100 h-100" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title text-center">Ford v/s Ferrari</h5>
+            <p class="card-text container-fluid">An epoch that chronicles Ford's quest to beat Ferrari at Le Mans in 1966, highlighting teamwork, grit, innovation, and rivalry.</p>
+            <div class="d-flex justify-content-between">
+            <a href="/fordferrari.html" class="btn btn-outline-dark">Watch Now</a>
+            <div class="cardicons">
+              <a href="/fordferrari.html#storyline"><i class="bi bi-eye-fill" ></i></a>  
+              <a href="/fordferrari.html#cast"><i class="bi bi-people-fill"></i></a>
+            </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    <div class = "col-sm-12 col-md-4 col-lg-4">
+      <div class="card" data-title = "Drishyam 1.0">
+        <a href = "/drishyam.html"> <img src="drishyam (2).svg" class="card-img-top w-100 h-100" alt="..."></a> 
+          <div class="card-body">
+            <h5 class="card-title text-center">Drishyam 1.0</h5>
+            <p class="card-text container-fluid">A 4th grade drop-out man cleverly covers up a crime committed by his family, outsmarting the police in a gripping thriller.</p>
+            <div class="d-flex justify-content-between">
+            <a href="/drishyam.html" class="btn btn-outline-dark">Watch Now</a>
+            <div class="cardicons">
+              <a href="/drishyam.html#storyline"><i class="bi bi-eye-fill" ></i></a>  
+              <a href="/drishyam.html#cast"><i class="bi bi-people-fill"></i></a>
+            </div>
+            </div>
+          </div>
+      </div>
+      </div>
+      <div class = "col-sm-12 col-md-4 col-lg-4">
+        <div class="card" data-title = "Maidaan">
+        <a href = "maidaan.html"> <img src="maidaan.svg" class="card-img-top w-100 h-100" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title text-center">Maidaan</h5>
+              <p class="card-text container-fluid">A determined football coach in 1950s India against all the odds architects the national team to sports' glory.</p>
+              <div class="d-flex justify-content-between">
+              <a href="/maidaan.html" class="btn btn-outline-dark">Watch Now</a>
+              <div class="cardicons">
+                <a href="/maidaan.html#storyline"><i class="bi bi-eye-fill" ></i></a>  
+                <a href="/maidaan.html#cast"><i class="bi bi-people-fill"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+        <div class = "col-sm-12 col-md-4 col-lg-4">
+          <div class="card" data-title = "PK">
+             <a href = "/pk.html"><img src="/image 6.svg" class="card-img-top w-100 h-100" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title text-center">PK</h5>
+                <p class="card-text container-fluid">An alien on Earth questions societal norms, challenging beliefs and exposing hypocrisies with humor and wit.</p>
+                <div class="d-flex justify-content-between">
+                <a href="/pk.html" class="btn btn-outline-dark">Watch Now</a>
+                <div class="cardicons">
+                  <a href="/pk.html#storyline"><i class="bi bi-eye-fill" ></i></a>  
+                  <a href="/pk.html#cast"><i class="bi bi-people-fill"></i></a>
+                </div>
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+        
+<section id = "shareyours">
+  <div class="container-lg">
+    <div class="text-center">
+      <h2> <i class="bi bi-bookmark-star-fill"></i> Share Your Favourites</h2>
+      <i>Let the world know choices that you can binge watch/read 24*7!</i>
+    </div>
+    <div class="row justify-content-center my-4">
+      <div class="col-lg-6">
+        <form action="https://script.google.com/macros/s/AKfycbyII7exwLpPCB9YLYt-hCO51H_84wnMtWkMKnM-VDox_mYWtvbwJ2tVkvtWsvpoq6ezLA/exec" method = "post" name = "shareyour">
+          <label for = "name" class = "form-label" required>Your Top-Pick:</label>
+          <input type = "text" class = "form-control" name = "name" placeholder="Your All-Time Favourites (e.g. FRIENDS, RRR, The Alchemist etc)"></input>
+          
+          <label for="genre" class="form-label mt-4">Book/Movie Genre:</label>
+          <select class="form-select" id="genre" name = "genre">
+            <option class = "text-primary" value = "Fiction">Fiction</option>
+            <option class = "text-secondary"  value = "Non-Fiction">Non-Fiction</option>
+            <option class = "text-alt-genre"  value = "Romantic">Romantic</option>
+            <option class = "text-success"  value = "Comedy">Comedy</option>
+            <option class = "text-danger" value = "Horror">Horror</option>
+            <option class = "text-dark"  value = "Sattire">Sattire</option>
+            <option class = "text-warning"  value = "Thriller">Thriller</option>
+            <option class = "text-info"  value = "Drama">Drama</option>
+            <option class = "text-light"  value = "Spritiuality">Spritiuality</option>
+            <option class = "text-altsh-genre" value = "Self-Help">Self-Help</option>
+          </select>
+          
+          <label for = "comment" class = "form-label mt-4">Your Highlights:</label>
+          <textarea class = "form-control" name="comment" placeholder="Your Favourite Character/Song/Scene etc you're fan of." rows = "3"></textarea>
+        
+          <div class="text-center mt-4 mb-4">
+            <button type = "submit" class = "btn btn-outline-dark" value="submit" id="submit">Share Your Picks!</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('searchInput');
+      const searchButton = document.getElementById('searchButton');
+      const cardGallery = document.getElementById('cardGallery');
+      const notFound = document.getElementById('notFound');
+      const cards = document.querySelectorAll('.card');
+    
+      const filterCards = () => {
+        const searchTerm = searchInput.value.toLowerCase();
+        let found = false;
+        
+        cards.forEach(card => {
+          const title = card.getAttribute('data-title').toLowerCase();
+          if (title.includes(searchTerm)) {
+            card.parentElement.style.display = 'block';
+            found = true;
+          } else {
+            card.parentElement.style.display = 'none';
+          }
+        });
+        
+        notFound.style.display = found ? 'none' : 'block';
+      };
+    
+      searchInput.addEventListener('input', filterCards);
+      
+      searchButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        filterCards();
+      });
+    });
+  </script>  
+  <script src = "Google Sheet.js"></script>
+  </body>
+</html>

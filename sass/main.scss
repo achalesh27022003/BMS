@@ -1,0 +1,40 @@
+
+// $primary: rgb(220, 17, 17);
+
+
+$custom-theme-colors: (
+    "alt-genre": rgb(244, 140, 157),
+    "altsh-genre": rgb(38, 225, 38),
+    "buttonmera":#E50914
+);
+$nav-link-hover-color: red;
+$nav-pills-link-active-bg: grey;
+
+.nav-pills .nav-link:hover {
+    background-color: rgb(222, 218, 218);
+}
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+$card-title-color: #E50914;
+.card-title {
+    color: $card-title-color;
+  }
+
+// Import variables first
+
+// Import other styles
+// @import '../node_modules/bootstrap/scss/card';
+
+.cardicons {
+    display: flex;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+.cardicons :hover {
+    color: red;
+}
+@import '../node_modules/bootstrap/scss/bootstrap';
