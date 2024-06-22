@@ -9,20 +9,28 @@
     <link rel="icon" type="image/png" href="Frame 10.png">
     <title>MediaMania - 3 Idiots</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
 
-
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class = "navbar-brand" href = "#">
+        <img src="/Group 6.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+       <span class = "fw-bold text-secondary"> MediaMania</span>
+      </a>
+    </div>
+  </nav>   
+<!-- <nav class="navbar navbar-expand-md navbar-light bg-light">
   <div class="container-xxl">
     <a href = "/3idiots.html" class = "navbar-brand">
       <img src="/Group 6.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
       <span class="fw-bold text-secondary"> MediaMania</span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mai-nav" aria-controls="mai-nav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav" data-bs-theme="dark">
+    <div class="collapse navbar-collapse justify-content-end align-center" id="mai-nav" data-bs-theme="dark">
       <ul class="navbar-nav">
         <li class = "nav-item">
           <a href="#cast" class="nav-link">Cast</a>
@@ -33,10 +41,10 @@
         <li class = "nav-item">
           <a href="#shareyours" class="nav-link">Share Yours</a>
         </li>
-        </ul>
+      </ul>
     </div>
   </div>
-</nav>  
+</nav>   -->
 
 <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators" >
@@ -360,7 +368,7 @@ The film uses real inventions, with brains behind these innovations include Remy
   <section>
     <div class="container-lg mt-4">
       <div class="text-center">
-        <h2 id = "shareyours"> <i class="bi bi-bookmark-star-fill"></i> Share Your Favourites</h2>
+        <h2 id = "shy3i"> <i class="bi bi-bookmark-star-fill"></i> Share Your Favourites</h2>
         <i>Let the world know choices that you can binge watch/read 24*7!</i>
       </div>
       <div class="row justify-content-center my-4">
@@ -371,16 +379,16 @@ The film uses real inventions, with brains behind these innovations include Remy
             
             <label for="genre" class="form-label mt-4">Book/Movie Genre:</label>
             <select class="form-select" id="genre" name = "genre">
-              <option class = "text-primary" name="genre">Fiction</option>
-              <option class = "text-secondary" name="genre">Non-Fiction</option>
-              <option class = "text-alt-genre" name="genre">Romantic</option>
-              <option class = "text-success" name="genre">Comedy</option>
-              <option class = "text-danger" name="genre">Horror</option>
-              <option class = "text-dark" name="genre">Sattire</option>
-              <option class = "text-warning" name="genre">Thriller</option>
-              <option class = "text-info" name="genre">Drama</option>
-              <option class = "text-light" name="genre">Spritiuality</option>
-              <option class = "text-altsh-genre" name="genre">Self-Help</option>
+              <option class = "text-primary">Fiction</option>
+              <option class = "text-secondary">Non-Fiction</option>
+              <option class = "text-alt-genre">Romantic</option>
+              <option class = "text-success" >Comedy</option>
+              <option class = "text-danger">Horror</option>
+              <option class = "text-dark">Sattire</option>
+              <option class = "text-warning" >Thriller</option>
+              <option class = "text-info">Drama</option>
+              <option class = "text-light">Sritiuality</option>
+              <option class = "text-altsh-genre">Self-Help</option>
             </select>
             
             <label for = "comment" class = "form-label mt-4">Your Highlights:</label>
